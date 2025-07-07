@@ -7,12 +7,12 @@ import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
 import ProjectCard from "@/components/experience/project-card";
-import SkillsCard from "@/components/skills/skills-card";
+import TechStacksCard from "@/components/tech-stacks/tech-stacks-card";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredExperiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { siteConfig } from "@/config/site";
-import { featuredSkills } from "@/config/skills";
+import { featuredTechStacks } from "@/config/tech-stacks";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -119,26 +119,26 @@ export default function IndexPage() {
       </section>
       <AnimatedSection
         className="container py-10 space-y-6 bg-muted"
-        id="skills"
+        id="tech-stacks"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <AnimatedText
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.skills.title}
+            {pagesConfig.techStacks.title}
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.skills.description}
+            {pagesConfig.techStacks.description}
           </AnimatedText>
         </div>
-        <SkillsCard skills={featuredSkills} />
+        <TechStacksCard techStacks={featuredTechStacks} />
         <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/skills">
+          <Link href="/tech-stacks">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="w-4 h-4 mr-2" /> View All
             </Button>

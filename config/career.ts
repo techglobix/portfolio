@@ -1,4 +1,4 @@
-import { ValidSkills } from "./constants";
+import { ValidTechStacks } from "./constants";
 
 export interface CareerExperienceInterface {
   id: string;
@@ -8,7 +8,7 @@ export interface CareerExperienceInterface {
   startDate: Date;
   endDate: Date | "Present";
   description: string[];
-  skills: ValidSkills[];
+  techStacks: ValidTechStacks[];
   companyUrl?: string;
   logo?: string;
 }
@@ -29,7 +29,7 @@ export const careerExperiences: CareerExperienceInterface[] = [
       "Monitored and debugged services using Kibana, identifying issues proactively and improving system observability.",
       "Collaborated with international teams to plan, develop, and deploy features, maintaining strong alignment despite geographic and cultural differences.",
     ],
-    skills: [
+    techStacks: [
       "Node.js",
       "express.js",
       "Vue.js",
@@ -58,7 +58,7 @@ export const careerExperiences: CareerExperienceInterface[] = [
       "Worked closely with frontend and DevOps teams to integrate services, optimize API performance, and support CI/CD workflows.",
       "Participated in system design discussions, helping to architect scalable solutions that support multi-tenant structures and community-driven features.",
     ],
-    skills: ["Node.js", "express.js", "Typescript", "PostgreSQL", "AWS"],
+    techStacks: ["Node.js", "express.js", "Typescript", "PostgreSQL", "AWS"],
     companyUrl: "https://binus.ac.id",
     logo: "/career/logo-binus.png",
   },
@@ -77,7 +77,7 @@ export const careerExperiences: CareerExperienceInterface[] = [
       "Collaborated closely with product managers and backend developers to define requirements and deliver features aligned with real-world logistics and sales processes.",
       "Contributed to form validations, user access handling, and state management to support business logic such as cut stock after order confirmation and shipment scheduling.",
     ],
-    skills: ["React", "Typescript", "Redux", "Material UI", "Storybook"],
+    techStacks: ["React", "Typescript", "Redux", "Material UI", "Storybook"],
     companyUrl: "https://www.nabatisnack.co.id",
     logo: "/career/logo-nabati.png",
   },
@@ -97,7 +97,7 @@ export const careerExperiences: CareerExperienceInterface[] = [
       "Deployment service and ui",
       "Fixing bugs or issues",
     ],
-    skills: ["React", "Node.js", "express.js", "Typescript", "PostgreSQL"],
+    techStacks: ["React", "Node.js", "express.js", "Typescript", "PostgreSQL"],
     companyUrl: "https://bri.co.id",
     logo: "/career/logo-bri.svg",
   },
@@ -118,7 +118,7 @@ export const careerExperiences: CareerExperienceInterface[] = [
       "Deployment on internal server",
       "Fixing bugs or issues",
     ],
-    skills: ["React", "Next.js", "Typescript", "Node.js", "PostgreSQL"],
+    techStacks: ["React", "Next.js", "Typescript", "Node.js", "PostgreSQL"],
     companyUrl: "https://rupbasanbandung.com/wp",
     logo: "/career/kemenkumham-logo.png",
   },

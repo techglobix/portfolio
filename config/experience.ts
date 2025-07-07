@@ -1,4 +1,4 @@
-import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
+import { ValidCategory, ValidExpType, ValidTechStacks } from "./constants";
 
 interface PagesInfoInterface {
   title: string;
@@ -18,8 +18,7 @@ export interface ExperienceInterface {
   category: ValidCategory[];
   shortDescription: string;
   websiteLink?: string;
-  githubLink?: string;
-  techStack: ValidSkills[];
+  techStack: ValidTechStacks[];
   startDate: Date;
   endDate: Date;
   companyLogoImg: any;
@@ -380,7 +379,7 @@ export const Experiences: ExperienceInterface[] = [
   },
   {
     id: "portfolio",
-    companyName: "My Portfolio",
+    companyName: "Developer Portfolio",
     type: "Personal Project",
     category: ["Full Stack Developer"],
     shortDescription: "A simple portfolio website",
@@ -388,8 +387,7 @@ export const Experiences: ExperienceInterface[] = [
     startDate: new Date("2023-09-01"),
     endDate: new Date("2024-10-01"),
     companyLogoImg: "/experience/portfolio/logo.png",
-    websiteLink: "https://techglobix.vercel.app",
-    githubLink: "https://github.com/techglobix/portfolio",
+    websiteLink: "https://daffa-akbar.vercel.app",
     pagesInfoArr: [],
     descriptionDetails: {
       paragraphs: ["A simple portfolio website"],
@@ -407,7 +405,6 @@ export const Experiences: ExperienceInterface[] = [
     endDate: new Date("2025-06-18"),
     companyLogoImg: "/experience/mytha-soni/logo.png",
     websiteLink: "https://mytha-soni.vercel.app",
-    githubLink: "https://github.com/techglobix/mytha-soni",
     pagesInfoArr: [
       {
         title: "Pages",
@@ -444,7 +441,6 @@ export const Experiences: ExperienceInterface[] = [
     endDate: new Date("2025-01-05"),
     companyLogoImg: "/experience/illa-ahmad/logo.png",
     websiteLink: "https://illa-ahmad.vercel.app/Guest",
-    githubLink: "https://github.com/techglobix/illa-ahmad",
     pagesInfoArr: [
       {
         title: "Pages",
@@ -482,7 +478,6 @@ export const Experiences: ExperienceInterface[] = [
     endDate: new Date("2025-01-05"),
     companyLogoImg: "/experience/fitri-firman/logo.png",
     websiteLink: "https://fitri-firman.vercel.app/Guest",
-    githubLink: "https://github.com/techglobix/fitri-firman",
     pagesInfoArr: [
       {
         title: "Pages",
@@ -509,7 +504,7 @@ export const Experiences: ExperienceInterface[] = [
   },
   {
     id: "wedding",
-    companyName: "My Wedding Invitation Website",
+    companyName: "Wedding Invitation Website",
     type: "Personal Project",
     category: ["Full Stack Developer"],
     shortDescription: "The wedding invitation",
@@ -518,7 +513,6 @@ export const Experiences: ExperienceInterface[] = [
     endDate: new Date("2024-06-04"),
     companyLogoImg: "/experience/wedding/logo.png",
     websiteLink: "https://techglobix.vercel.app/Guest",
-    githubLink: "https://github.com/techglobix/invitation",
     pagesInfoArr: [
       {
         title: "Pages",

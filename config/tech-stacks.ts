@@ -1,13 +1,13 @@
 import { Flags, Icons } from "@/components/common/icons";
 
-export interface skillsInterface {
+export interface TechStackInterface {
   name: string;
   description: string;
   rating: number;
   icon: any;
 }
 
-export const skillsUnsorted: skillsInterface[] = [
+export const techStacksUnsorted: TechStackInterface[] = [
   {
     name: "React",
     description:
@@ -272,7 +272,7 @@ export const skillsUnsorted: skillsInterface[] = [
   },
 ];
 
-export const skills = skillsUnsorted.slice();
+export const techStacks = techStacksUnsorted.slice();
 // .sort((a, b) => b.rating - a.rating);
 
-export const featuredSkills = skills.slice(0, 6);
+export const featuredTechStacks = techStacks.slice(0, 6);

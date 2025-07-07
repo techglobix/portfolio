@@ -25,7 +25,9 @@ const getYearFromDate = (date: Date): string => {
 
 export default function CareerDetailPage({ params }: CareerDetailPageProps) {
   const career = careerExperiences.find((c) => c.id === params.careerId);
-  const [activeTab, setActiveTab] = useState<"summary" | "skills">("summary");
+  const [activeTab, setActiveTab] = useState<"summary" | "tech-stacks">(
+    "summary"
+  );
 
   if (!career) {
     redirect("/career");
@@ -131,11 +133,11 @@ export default function CareerDetailPage({ params }: CareerDetailPageProps) {
               )}
             </button>
             <button
-              className={`py-1 sm:py-2 px-2 sm:px-4 font-medium text-xs sm:text-sm relative whitespace-nowrap ${activeTab === "skills" ? "text-primary" : "text-muted-foreground"}`}
-              onClick={() => setActiveTab("skills")}
+              className={`py-1 sm:py-2 px-2 sm:px-4 font-medium text-xs sm:text-sm relative whitespace-nowrap ${activeTab === "tech-stacks" ? "text-primary" : "text-muted-foreground"}`}
+              onClick={() => setActiveTab("tech-stacks")}
             >
-              Skills
-              {activeTab === "skills" && (
+              Tech Stacks
+              {activeTab === "tech-stacks" && (
                 <motion.div
                   className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary"
                   layoutId="activeTabIndicator"
@@ -169,18 +171,18 @@ export default function CareerDetailPage({ params }: CareerDetailPageProps) {
               </div>
             )}
 
-            {activeTab === "skills" && (
+            {activeTab === "tech-stacks" && (
               <div className="pt-2">
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                 >
-                  <ChipContainer textArr={career.skills} />
+                  <ChipContainer textArr={career.techStacks} />
                 </motion.div>
                 <p className="mt-4 text-xs sm:mt-6 sm:text-sm text-muted-foreground">
-                  These are the primary technologies and skills utilized during
-                  my time at {career.company}.
+                  These are the primary technologies and tech stacks utilized
+                  during my time at {career.company}.
                 </p>
               </div>
             )}

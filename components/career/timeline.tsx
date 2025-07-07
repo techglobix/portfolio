@@ -152,9 +152,9 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 
                   <div className="mb-3 sm:mb-4">
                     <h4 className="mb-1 text-xs font-medium sm:mb-2 sm:text-sm">
-                      Skills
+                      Tech Stacks
                     </h4>
-                    <ChipContainer textArr={experience.skills} />
+                    <ChipContainer textArr={experience.techStacks} />
                   </div>
 
                   <Link

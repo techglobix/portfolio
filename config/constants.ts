@@ -1,4 +1,4 @@
-export type ValidSkills =
+export type ValidTechStacks =
   | "Next.js"
   | "React"
   | "GraphQL"
@@ -71,7 +71,7 @@ export type ValidExpType = "Personal Project" | "Professional";
 
 export type ValidPages =
   | "home"
-  | "skills"
+  | "techStacks"
   | "experience"
   | "career"
   | "contact"

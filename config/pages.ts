@@ -15,19 +15,19 @@ type PagesConfig = {
 export const pagesConfig: PagesConfig = {
   home: {
     title: "Home",
-    description: "Welcome to my portfolio website.",
+    description: "Welcome to TechGlobix portfolio website.",
     metadata: {
       title: "Home",
       description: "TechGlobix's portfolio website.",
     },
   },
-  skills: {
-    title: "Skills",
-    description: "Key skills that define my professional identity.",
+  techStacks: {
+    title: "Tech Stacks",
+    description: "Key tech stacks that define our professional identity.",
     metadata: {
-      title: "Skills",
+      title: "Tech Stacks",
       description:
-        "TechGlobix's key skills that define their professional identity.",
+        "TechGlobix's key tech stacks that define their professional identity.",
     },
   },
   experience: {
