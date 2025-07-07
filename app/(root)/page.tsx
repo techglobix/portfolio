@@ -79,7 +79,7 @@ export default function IndexPage() {
           <AnimatedText
             as="p"
             delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 hidden md:block"
           >
             Global Tech Solutions is a leading provider of innovative technology
             services and solutions with a worldwide presence. We empower
