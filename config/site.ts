@@ -9,10 +9,8 @@ export const siteConfig = {
     github: "https://github.com/techglobix",
   },
   ogImage: "https://techglobix.vercel.app/logo.png",
-  iconIco:
-    "https://api.logo.com/api/v2/images?design=lg_DmWBUZNybLLarqDlJ0&u=3355c4fae3283be15e48aec23df7125c97369e64f5193638e0d65ec1f1ca6e96&width=500&height=400&margins=100&fit=contain&format=webp&quality=60&tightBounds=true",
-  logoIcon:
-    "https://api.logo.com/api/v2/images?design=lg_DmWBUZNybLLarqDlJ0&u=3355c4fae3283be15e48aec23df7125c97369e64f5193638e0d65ec1f1ca6e96&width=500&height=400&margins=100&fit=contain&format=webp&quality=60&tightBounds=true",
+  iconIco: "https://techglobix.vercel.app/logo.png",
+  logoIcon: "https://techglobix.vercel.app/logo.png",
   keywords: [
     "TechGlobix",
     "Full Stack Developer",
