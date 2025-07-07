@@ -6,11 +6,11 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
-import ProjectCard from "@/components/experience/project-card";
+import ProjectCard from "@/components/projects/project-card";
 import TechStacksCard from "@/components/tech-stacks/tech-stacks-card";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { featuredExperiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
+import { Projects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { featuredTechStacks } from "@/config/tech-stacks";
 import { cn } from "@/lib/utils";
@@ -148,36 +148,36 @@ export default function IndexPage() {
       <AnimatedSection
         direction="right"
         className="container py-10 space-y-6 my-14"
-        id="experience"
+        id="projects"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <AnimatedText
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.experience.title}
+            {pagesConfig.projects.title}
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            {pagesConfig.experience.description}
+            {pagesConfig.projects.description}
           </AnimatedText>
         </div>
         <div className="grid justify-center gap-4 mx-auto md:w-full lg:grid-cols-3">
-          {featuredExperiences.map((exp, index) => (
+          {Projects.slice(0, 3).map((prj, index) => (
             <AnimatedSection
-              key={exp.id}
+              key={prj.id}
               delay={0.1 * (index + 1)}
               direction="up"
             >
-              <ProjectCard project={exp} />
+              <ProjectCard project={prj} />
             </AnimatedSection>
           ))}
         </div>
         <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/experience">
+          <Link href="/projects">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="w-4 h-4 mr-2" /> View All
             </Button>
@@ -185,7 +185,7 @@ export default function IndexPage() {
         </AnimatedText>
         {/* <div className="mx-auto text-center md:max-w-[58rem]">
                     <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant experiences.
+                        See all the relevant projects.
                     </p>
                 </div> */}
       </AnimatedSection>

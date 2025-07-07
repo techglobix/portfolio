@@ -3,68 +3,62 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { Icons } from "@/components/common/icons";
-import ExperienceDescription from "@/components/experience/exp-description";
+import ProjectDescription from "@/components/projects/prj-description";
 import { buttonVariants } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import CustomTooltip from "@/components/ui/custom-tooltip";
-import { Experiences } from "@/config/experience";
+import { Projects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { cn, formatDateFromObj } from "@/lib/utils";
 import logoImg from "@/public/logo.png";
 
-interface ExperiencePageProps {
+interface ProjectPageProps {
   params: {
-    expId: string;
+    prjId: string;
   };
 }
 
 const githubUsername = "techglobix";
 
-export default function Experience({ params }: ExperiencePageProps) {
-  let exp = Experiences.find((val) => val.id === params.expId);
-  if (!exp) {
-    redirect("/experience");
+export default function ProjectPage({ params }: ProjectPageProps) {
+  let prj = Projects.find((val: any) => val.id === params.prjId);
+  if (!prj) {
+    redirect("/projects");
   }
 
   return (
     <article className="container relative max-w-3xl py-6 lg:py-10">
       <Link
-        href="/experience"
+        href="/projects"
         className={cn(
           buttonVariants({ variant: "ghost" }),
           "absolute left-[-200px] top-14 hidden xl:inline-flex"
         )}
       >
         <Icons.chevronLeft className="w-4 h-4 mr-2" />
-        All Experience
+        All Projects
       </Link>
       <div>
         <time
           dateTime={Date.now().toString()}
           className="block text-sm text-muted-foreground"
         >
-          {formatDateFromObj(exp.startDate)}
+          {formatDateFromObj(prj.startDate)}
         </time>
         <h1 className="flex items-center justify-between mt-2 text-4xl leading-tight font-heading lg:text-5xl">
-          {exp.companyName}
+          {prj.companyName}
           <div className="flex items-center">
-            {exp.githubLink && (
-              <CustomTooltip text="Link to the source code.">
-                <Link href={exp.githubLink} target="_blank">
-                  <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
-                </Link>
-              </CustomTooltip>
-            )}
-            {exp.websiteLink && (
+            {/* Github link removed: not present in ProjectInterface */}
+            {prj.websiteLink && (
               <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
-                <Link href={exp.websiteLink} target="_blank">
+                <Link href={prj.websiteLink} target="_blank">
                   <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
                 </Link>
               </CustomTooltip>
             )}
           </div>
         </h1>
-        <ChipContainer textArr={exp.category} />
+        <ChipContainer textArr={prj.category} />
         <div className="flex mt-4 space-x-4">
           <Link
             href={siteConfig.links.github}
@@ -89,8 +83,8 @@ export default function Experience({ params }: ExperiencePageProps) {
       </div>
 
       <Image
-        src={exp.companyLogoImg}
-        alt={exp.companyName}
+        src={prj.companyLogoImg}
+        alt={prj.companyName}
         width={720}
         height={405}
         className="my-8 transition-colors border rounded-md bg-muted"
@@ -101,34 +95,34 @@ export default function Experience({ params }: ExperiencePageProps) {
         <h2 className="inline-block mb-2 text-3xl leading-tight font-heading lg:text-3xl">
           Tech Stack
         </h2>
-        <ChipContainer textArr={exp.techStack} />
+        <ChipContainer textArr={prj.techStack} />
       </div>
 
       <div className="mb-7 ">
         <h2 className="inline-block mb-2 text-3xl leading-tight font-heading lg:text-3xl">
           Description
         </h2>
-        {/* {<exp.descriptionComponent />} */}
-        <ExperienceDescription
-          paragraphs={exp.descriptionDetails.paragraphs}
-          bullets={exp.descriptionDetails.bullets}
+        {/* {<prj.descriptionComponent />} */}
+        <ProjectDescription
+          paragraphs={prj.descriptionDetails.paragraphs}
+          bullets={prj.descriptionDetails.bullets}
         />
       </div>
 
       <div className="mb-7 ">
-        {!!exp.pagesInfoArr.length && (
+        {!!prj.pagesInfoArr.length && (
           <h2 className="inline-block mb-5 text-3xl leading-tight font-heading lg:text-3xl">
             Page Info
           </h2>
         )}
-        {exp.pagesInfoArr.map((page, ind) => (
+        {prj.pagesInfoArr.map((page: any, ind: number) => (
           <div key={ind}>
             <h3 className="flex items-center mt-3 text-xl leading-tight font-heading lg:text-xl">
               <Icons.star className="w-5 h-5 mr-2" /> {page.title}
             </h3>
             <div>
               <p>{page.description}</p>
-              {page.imgArr.map((img, ind) => (
+              {page.imgArr.map((img: string, ind: number) => (
                 <Image
                   src={img}
                   key={ind}
@@ -147,11 +141,11 @@ export default function Experience({ params }: ExperiencePageProps) {
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">
         <Link
-          href="/experience"
+          href="/projects"
           className={cn(buttonVariants({ variant: "ghost" }))}
         >
           <Icons.chevronLeft className="w-4 h-4 mr-2" />
-          All Experience
+          All Projects
         </Link>
       </div>
     </article>

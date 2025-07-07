@@ -8,8 +8,8 @@ This is the folder structure of the whole application
 │ │ │ └── page.tsx
 │ │ ├── contributions
 │ │ │ └── page.tsx
-│ │ ├── experience
-│ │ │ ├── [expId]
+│ │ ├── projects
+│ │ │ ├── [prjId]
 │ │ │ │ └── page.tsx
 │ │ │ └── page.tsx
 │ │ ├── layout.tsx
@@ -48,8 +48,8 @@ This is the folder structure of the whole application
 │ │ └── github-redirect-card.tsx
 │ ├── contributions
 │ │ └── contribution-card.tsx
-│ ├── experience
-│ │ ├── exp-description.tsx
+│ ├── projects
+│ │ ├── prj-description.tsx
 │ │ └── project-card.tsx
 │ ├── forms
 │ │ └── contact-form.tsx
@@ -81,7 +81,7 @@ This is the folder structure of the whole application
 ├── config
 │ ├── constants.ts
 │ ├── contributions.ts
-│ ├── experience.ts
+│ ├── projects.ts
 │ ├── pages.ts
 │ ├── routes.ts
 │ ├── site.ts
@@ -100,7 +100,7 @@ This is the folder structure of the whole application
 ├── providers
 │ └── modal-provider.tsx
 ├── public
-│ ├── experience
+│ ├── projects
 │ │ ├── apex
 │ │ │ ├── app_1.webp
 │ │ │ ├── app_2.webp

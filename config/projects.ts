@@ -11,7 +11,7 @@ interface DescriptionDetailsInterface {
   bullets: string[];
 }
 
-export interface ExperienceInterface {
+export interface ProjectInterface {
   id: string;
   type: ValidExpType;
   companyName: string;
@@ -26,7 +26,8 @@ export interface ExperienceInterface {
   pagesInfoArr: PagesInfoInterface[];
 }
 
-export const Experiences: ExperienceInterface[] = [
+// prettier-ignore
+export const Projects: ProjectInterface[] = [
   {
     id: "sociolla",
     companyName: "Sociolla",
@@ -48,35 +49,35 @@ export const Experiences: ExperienceInterface[] = [
     ],
     startDate: new Date("2023-11-01"),
     endDate: new Date(),
-    companyLogoImg: "/experience/sociolla/logo.png",
+    companyLogoImg: "/projects/sociolla/logo.png",
     pagesInfoArr: [
       {
         title: "Sociolla",
         description:
           "The Most Complete & Trusted Cosmetic Site #1 in Indonesia",
-        imgArr: ["/experience/sociolla/sociolla.png"],
+        imgArr: ["/projects/sociolla/sociolla.png"],
       },
       {
         title: "Lilla",
         description: "The First Ultimate App for Moms",
-        imgArr: ["/experience/sociolla/lilla.png"],
+        imgArr: ["/projects/sociolla/lilla.png"],
       },
       {
         title: "Beauty Journal",
         description:
           "Beauty Journal is a youth media that presents informative, reliable, and relevant beauty and lifestyle content.",
-        imgArr: ["/experience/sociolla/beautyjournal.png"],
+        imgArr: ["/projects/sociolla/beautyjournal.png"],
       },
       {
         title: "SOCO",
         description:
           "Aplikasi yang bikin beauty journey-mu makin mudah, sat set penuhi semua kebutuhan cantikmu!",
-        imgArr: ["/experience/sociolla/soco.png"],
+        imgArr: ["/projects/sociolla/soco.png"],
       },
       {
         title: "SHIELD",
         description: "HRMS for Sociolla Employees",
-        imgArr: ["/experience/sociolla/shield.png"],
+        imgArr: ["/projects/sociolla/shield.png"],
       },
     ],
     descriptionDetails: {
@@ -86,7 +87,7 @@ export const Experiences: ExperienceInterface[] = [
       ],
       bullets: [
         "Developed scalable backend services using Node.js, Express.js, and MongoDB, with a focus on clean architecture and maintainability.",
-        "Built dynamic frontend interfaces with Vue.js to improve user experience for internal tools and dashboards.",
+        "Built dynamic frontend interfaces with Vue.js to improve user projects for internal tools and dashboards.",
         "Implemented Elasticsearch for fast data retrieval and analytics, enabling efficient querying of large-scale operational data.",
         "Managed background jobs and asynchronous workflows using RabbitMQ, improving system responsiveness and reliability.",
         "Monitored and debugged services using Kibana, identifying issues proactively and improving system observability.",
@@ -103,19 +104,19 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["Vue.js", "Tailwind CSS", "Laravel", "PostgreSQL"],
     startDate: new Date("2024-10-01"),
     endDate: new Date("2023-02-01"),
-    companyLogoImg: "/experience/spartan/logo.svg",
+    companyLogoImg: "/projects/spartan/logo.svg",
     pagesInfoArr: [
       {
         title: "Spartan",
         imgArr: [
-          "/experience/spartan/1.png",
-          "/experience/spartan/2.png",
-          "/experience/spartan/3.png",
-          "/experience/spartan/4.png",
-          "/experience/spartan/5.png",
-          "/experience/spartan/6.png",
-          "/experience/spartan/7.png",
-          "/experience/spartan/8.png",
+          "/projects/spartan/1.png",
+          "/projects/spartan/2.png",
+          "/projects/spartan/3.png",
+          "/projects/spartan/4.png",
+          "/projects/spartan/5.png",
+          "/projects/spartan/6.png",
+          "/projects/spartan/7.png",
+          "/projects/spartan/8.png",
         ],
       },
     ],
@@ -147,23 +148,23 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["Node.js", "express.js", "Typescript", "PostgreSQL", "AWS"],
     startDate: new Date("2023-04-01"),
     endDate: new Date("2023-11-01"),
-    companyLogoImg: "/experience/binus/logo.jpeg",
+    companyLogoImg: "/projects/binus/logo.jpeg",
     pagesInfoArr: [
       {
         title: "Onboarding Screen",
-        imgArr: ["/experience/binus/onboarding.webp"],
+        imgArr: ["/projects/binus/onboarding.webp"],
       },
       {
         title: "Login Page",
-        imgArr: ["/experience/binus/login.webp"],
+        imgArr: ["/projects/binus/login.webp"],
       },
       {
         title: "Home Page",
-        imgArr: ["/experience/binus/homepage.webp"],
+        imgArr: ["/projects/binus/homepage.webp"],
       },
       {
         title: "Community",
-        imgArr: ["/experience/binus/community.webp"],
+        imgArr: ["/projects/binus/community.webp"],
       },
     ],
     descriptionDetails: {
@@ -191,54 +192,54 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["Figma", "React", "Next.js", "Material UI"],
     startDate: new Date("2023-09-01"),
     endDate: new Date("2024-06-01"),
-    companyLogoImg: "/experience/poslive/logo.jpg",
+    companyLogoImg: "/projects/poslive/logo.jpg",
     pagesInfoArr: [
       {
         title: "Login Page",
-        imgArr: ["/experience/poslive/1.png"],
+        imgArr: ["/projects/poslive/1.png"],
       },
       {
         title: "Register Merchant",
         imgArr: [
-          "/experience/poslive/14.png",
-          "/experience/poslive/15.png",
-          "/experience/poslive/16.png",
-          "/experience/poslive/17.png",
-          "/experience/poslive/18.png",
-          "/experience/poslive/19.png",
+          "/projects/poslive/14.png",
+          "/projects/poslive/15.png",
+          "/projects/poslive/16.png",
+          "/projects/poslive/17.png",
+          "/projects/poslive/18.png",
+          "/projects/poslive/19.png",
         ],
       },
       {
         title: "Servings",
         imgArr: [
-          "/experience/poslive/2.png",
-          "/experience/poslive/3.png",
-          "/experience/poslive/4.png",
+          "/projects/poslive/2.png",
+          "/projects/poslive/3.png",
+          "/projects/poslive/4.png",
         ],
       },
       {
         title: "Variants",
-        imgArr: ["/experience/poslive/5.png", "/experience/poslive/6.png"],
+        imgArr: ["/projects/poslive/5.png", "/projects/poslive/6.png"],
       },
       {
         title: "Promotions",
-        imgArr: ["/experience/poslive/7.png", "/experience/poslive/8.png"],
+        imgArr: ["/projects/poslive/7.png", "/projects/poslive/8.png"],
       },
       {
         title: "Stock Realtime",
-        imgArr: ["/experience/poslive/9.png"],
+        imgArr: ["/projects/poslive/9.png"],
       },
       {
         title: "Daily Stock",
-        imgArr: ["/experience/poslive/10.png", "/experience/poslive/11.png"],
+        imgArr: ["/projects/poslive/10.png", "/projects/poslive/11.png"],
       },
       {
         title: "Users",
-        imgArr: ["/experience/poslive/12.png"],
+        imgArr: ["/projects/poslive/12.png"],
       },
       {
         title: "Settings",
-        imgArr: ["/experience/poslive/13.png"],
+        imgArr: ["/projects/poslive/13.png"],
       },
     ],
     descriptionDetails: {
@@ -267,22 +268,22 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["React", "Typescript", "Redux", "Material UI", "Storybook"],
     startDate: new Date("2022-09-01"),
     endDate: new Date("2023-03-01"),
-    companyLogoImg: "/experience/nabati/logo.jpg",
+    companyLogoImg: "/projects/nabati/logo.jpg",
     pagesInfoArr: [
       {
         title: "EDot",
         imgArr: [
-          "/experience/nabati/login-page.png",
-          "/experience/nabati/1.png",
-          "/experience/nabati/2.png",
-          "/experience/nabati/3.png",
-          "/experience/nabati/4.png",
-          "/experience/nabati/5.png",
-          "/experience/nabati/6.png",
-          "/experience/nabati/7.png",
-          "/experience/nabati/8.png",
-          "/experience/nabati/9.png",
-          "/experience/nabati/10.png",
+          "/projects/nabati/login-page.png",
+          "/projects/nabati/1.png",
+          "/projects/nabati/2.png",
+          "/projects/nabati/3.png",
+          "/projects/nabati/4.png",
+          "/projects/nabati/5.png",
+          "/projects/nabati/6.png",
+          "/projects/nabati/7.png",
+          "/projects/nabati/8.png",
+          "/projects/nabati/9.png",
+          "/projects/nabati/10.png",
         ],
       },
     ],
@@ -294,7 +295,7 @@ export const Experiences: ExperienceInterface[] = [
       bullets: [
         "Designed and implemented responsive and accessible frontend interfaces using React, Next.js, TypeScript, and Material UI, focusing on modular, scalable component architecture.",
         "Developed dynamic configuration tools that allow sales teams to manage product variations, pricing structures, and availability rules tailored to different customer types.",
-        "Built interactive interfaces for order creation, stock deduction logic, and shipment tracking, ensuring a smooth and intuitive user experience.",
+        "Built interactive interfaces for order creation, stock deduction logic, and shipment tracking, ensuring a smooth and intuitive user projects.",
         "Integrated frontend with backend services via RESTful APIs, managing asynchronous operations and error handling using React Query.",
         "Collaborated closely with product managers and backend developers to define requirements and deliver features aligned with real-world logistics and sales processes.",
         "Contributed to form validations, user access handling, and state management to support business logic such as cut stock after order confirmation and shipment scheduling.",
@@ -312,23 +313,23 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["React", "Node.js", "express.js", "Typescript", "PostgreSQL"],
     startDate: new Date("2020-11-01"),
     endDate: new Date("2022-08-01"),
-    companyLogoImg: "/experience/bri/logo.png",
+    companyLogoImg: "/projects/bri/logo.png",
     pagesInfoArr: [
       {
         title: "Home Page",
-        imgArr: ["/experience/bri/homepage.png"],
+        imgArr: ["/projects/bri/homepage.png"],
       },
       {
         title: "Profile",
-        imgArr: ["/experience/bri/profile.png"],
+        imgArr: ["/projects/bri/profile.png"],
       },
       {
         title: "Service",
-        imgArr: ["/experience/bri/service.png"],
+        imgArr: ["/projects/bri/service.png"],
       },
       {
         title: "Contact",
-        imgArr: ["/experience/bri/contact.png"],
+        imgArr: ["/projects/bri/contact.png"],
       },
     ],
     descriptionDetails: {
@@ -358,7 +359,7 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["React", "Next.js", "Typescript", "Node.js", "PostgreSQL"],
     startDate: new Date("2020-04-01"),
     endDate: new Date("2020-10-01"),
-    companyLogoImg: "/experience/kemenkumham/logo.png",
+    companyLogoImg: "/projects/kemenkumham/logo.png",
     pagesInfoArr: [],
     descriptionDetails: {
       paragraphs: [
@@ -386,7 +387,7 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["React", "Next.js", "Typescript", "Material UI"],
     startDate: new Date("2023-09-01"),
     endDate: new Date("2024-10-01"),
-    companyLogoImg: "/experience/portfolio/logo.png",
+    companyLogoImg: "/projects/portfolio/logo.png",
     websiteLink: "https://daffa-akbar.vercel.app",
     pagesInfoArr: [],
     descriptionDetails: {
@@ -403,25 +404,25 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["React", "Next.js", "Typescript", "Tailwind CSS"],
     startDate: new Date("2025-04-20"),
     endDate: new Date("2025-06-18"),
-    companyLogoImg: "/experience/mytha-soni/logo.png",
+    companyLogoImg: "/projects/mytha-soni/logo.png",
     websiteLink: "https://mytha-soni.vercel.app",
     pagesInfoArr: [
       {
         title: "Pages",
         imgArr: [
-          "/experience/mytha-soni/logo.png",
-          "/experience/mytha-soni/1.png",
-          "/experience/mytha-soni/2.png",
-          "/experience/mytha-soni/3.png",
-          "/experience/mytha-soni/4.png",
-          "/experience/mytha-soni/5.png",
-          "/experience/mytha-soni/6.png",
-          "/experience/mytha-soni/7.png",
-          "/experience/mytha-soni/8.png",
-          "/experience/mytha-soni/9.png",
-          "/experience/mytha-soni/10.png",
-          "/experience/mytha-soni/11.png",
-          "/experience/mytha-soni/12.png",
+          "/projects/mytha-soni/logo.png",
+          "/projects/mytha-soni/1.png",
+          "/projects/mytha-soni/2.png",
+          "/projects/mytha-soni/3.png",
+          "/projects/mytha-soni/4.png",
+          "/projects/mytha-soni/5.png",
+          "/projects/mytha-soni/6.png",
+          "/projects/mytha-soni/7.png",
+          "/projects/mytha-soni/8.png",
+          "/projects/mytha-soni/9.png",
+          "/projects/mytha-soni/10.png",
+          "/projects/mytha-soni/11.png",
+          "/projects/mytha-soni/12.png",
         ],
       },
     ],
@@ -439,26 +440,26 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["React", "Next.js", "Typescript", "Material UI"],
     startDate: new Date("2024-12-28"),
     endDate: new Date("2025-01-05"),
-    companyLogoImg: "/experience/illa-ahmad/logo.png",
+    companyLogoImg: "/projects/illa-ahmad/logo.png",
     websiteLink: "https://illa-ahmad.vercel.app/Guest",
     pagesInfoArr: [
       {
         title: "Pages",
         imgArr: [
-          "/experience/illa-ahmad/logo.png",
-          "/experience/illa-ahmad/1.png",
-          "/experience/illa-ahmad/2.png",
-          "/experience/illa-ahmad/3.png",
-          "/experience/illa-ahmad/4.png",
-          "/experience/illa-ahmad/5.png",
-          "/experience/illa-ahmad/6.png",
-          "/experience/illa-ahmad/7.png",
-          "/experience/illa-ahmad/8.png",
-          "/experience/illa-ahmad/9.png",
-          "/experience/illa-ahmad/10.png",
-          "/experience/illa-ahmad/11.png",
-          "/experience/illa-ahmad/12.png",
-          "/experience/illa-ahmad/13.png",
+          "/projects/illa-ahmad/logo.png",
+          "/projects/illa-ahmad/1.png",
+          "/projects/illa-ahmad/2.png",
+          "/projects/illa-ahmad/3.png",
+          "/projects/illa-ahmad/4.png",
+          "/projects/illa-ahmad/5.png",
+          "/projects/illa-ahmad/6.png",
+          "/projects/illa-ahmad/7.png",
+          "/projects/illa-ahmad/8.png",
+          "/projects/illa-ahmad/9.png",
+          "/projects/illa-ahmad/10.png",
+          "/projects/illa-ahmad/11.png",
+          "/projects/illa-ahmad/12.png",
+          "/projects/illa-ahmad/13.png",
         ],
       },
     ],
@@ -476,24 +477,24 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["React", "Next.js", "Typescript", "Material UI"],
     startDate: new Date("2024-12-28"),
     endDate: new Date("2025-01-05"),
-    companyLogoImg: "/experience/fitri-firman/logo.png",
+    companyLogoImg: "/projects/fitri-firman/logo.png",
     websiteLink: "https://fitri-firman.vercel.app/Guest",
     pagesInfoArr: [
       {
         title: "Pages",
         imgArr: [
-          "/experience/fitri-firman/logo.png",
-          "/experience/fitri-firman/1.png",
-          "/experience/fitri-firman/2.png",
-          "/experience/fitri-firman/3.png",
-          "/experience/fitri-firman/4.png",
-          "/experience/fitri-firman/5.png",
-          "/experience/fitri-firman/6.png",
-          "/experience/fitri-firman/7.png",
-          "/experience/fitri-firman/8.png",
-          "/experience/fitri-firman/9.png",
-          "/experience/fitri-firman/10.png",
-          "/experience/fitri-firman/11.png",
+          "/projects/fitri-firman/logo.png",
+          "/projects/fitri-firman/1.png",
+          "/projects/fitri-firman/2.png",
+          "/projects/fitri-firman/3.png",
+          "/projects/fitri-firman/4.png",
+          "/projects/fitri-firman/5.png",
+          "/projects/fitri-firman/6.png",
+          "/projects/fitri-firman/7.png",
+          "/projects/fitri-firman/8.png",
+          "/projects/fitri-firman/9.png",
+          "/projects/fitri-firman/10.png",
+          "/projects/fitri-firman/11.png",
         ],
       },
     ],
@@ -511,24 +512,24 @@ export const Experiences: ExperienceInterface[] = [
     techStack: ["React", "Next.js", "Typescript", "Material UI"],
     startDate: new Date("2023-12-29"),
     endDate: new Date("2024-06-04"),
-    companyLogoImg: "/experience/wedding/logo.png",
+    companyLogoImg: "/projects/wedding/logo.png",
     websiteLink: "https://techglobix.vercel.app/Guest",
     pagesInfoArr: [
       {
         title: "Pages",
         imgArr: [
-          "/experience/wedding/logo.png",
-          "/experience/wedding/1.png",
-          "/experience/wedding/2.png",
-          "/experience/wedding/3.png",
-          "/experience/wedding/4.png",
-          "/experience/wedding/5.png",
-          "/experience/wedding/6.png",
-          "/experience/wedding/7.png",
-          "/experience/wedding/8.png",
-          "/experience/wedding/9.png",
-          "/experience/wedding/10.png",
-          "/experience/wedding/11.png",
+          "/projects/wedding/logo.png",
+          "/projects/wedding/1.png",
+          "/projects/wedding/2.png",
+          "/projects/wedding/3.png",
+          "/projects/wedding/4.png",
+          "/projects/wedding/5.png",
+          "/projects/wedding/6.png",
+          "/projects/wedding/7.png",
+          "/projects/wedding/8.png",
+          "/projects/wedding/9.png",
+          "/projects/wedding/10.png",
+          "/projects/wedding/11.png",
         ],
       },
     ],
@@ -537,8 +538,8 @@ export const Experiences: ExperienceInterface[] = [
       bullets: [],
     },
   },
-];
+]
 
-export const featuredExperiences = Experiences.filter((_, i) =>
+export const featuredProjects = Projects.filter((_, i) =>
   [0, 1, 4].includes(i)
 );

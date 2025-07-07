@@ -10,7 +10,7 @@ The website's main navigation menu is accessible from all pages and includes the
 
 1. **Home**: [https://techglobix.vercel.app/](https://techglobix.vercel.app/)
 2. **Skills**: [https://techglobix.vercel.app/skills](https://techglobix.vercel.app/skills)
-3. **Experience**: [https://techglobix.vercel.app/experience](https://techglobix.vercel.app/experience)
+3. **Projects**: [https://techglobix.vercel.app/projects](https://techglobix.vercel.app/projects)
 4. **Contributions**: [https://techglobix.vercel.app/contributions](https://techglobix.vercel.app/contributions)
 5. **Contact**: [https://techglobix.vercel.app/contact](https://techglobix.vercel.app/contact)
 
@@ -26,7 +26,7 @@ The website's main navigation menu is accessible from all pages and includes the
 
 - **Introduction**: Presents the individual's name and role (e.g., "Full Stack Developer").
 - **Skills Overview**: Highlights key skills with a prompt to view all skills.
-- **Experience Highlights**: Summarizes notable projects with links to detailed descriptions.
+- **Projects Highlights**: Summarizes notable projects with links to detailed descriptions.
 - **Contributions Summary**: Lists recent open-source contributions with links for more information.
 
 ### 2. Skills
@@ -37,9 +37,9 @@ The website's main navigation menu is accessible from all pages and includes the
 
 - **Technical Skills**: Enumerates various technologies and tools, each accompanied by a brief description.
 
-### 3. Experience
+### 3. Projects
 
-**URL:** [https://techglobix.vercel.app/experience](https://techglobix.vercel.app/experience)
+**URL:** [https://techglobix.vercel.app/projects](https://techglobix.vercel.app/projects)
 
 **Sections:**
 

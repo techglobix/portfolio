@@ -72,7 +72,7 @@ export type ValidExpType = "Personal Project" | "Professional";
 export type ValidPages =
   | "home"
   | "techStacks"
-  | "experience"
+  | "projects"
   | "career"
   | "contact"
   | "contributions"

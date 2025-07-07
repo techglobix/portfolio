@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExperienceDescription: React.FC<{
+const ProjectDescription: React.FC<{
   paragraphs: string[];
   bullets: string[];
 }> = ({ paragraphs, bullets }) => {
@@ -11,7 +11,7 @@ const ExperienceDescription: React.FC<{
           {paragraph}
         </p>
       ))}
-      <ul className="list-disc pl-6 mt-4">
+      <ul className="pl-6 mt-4 list-disc">
         {bullets.map((bullet, index) => (
           <li key={index}>{bullet}</li>
         ))}
@@ -20,4 +20,4 @@ const ExperienceDescription: React.FC<{
   );
 };
 
-export default ExperienceDescription;
+export default ProjectDescription;

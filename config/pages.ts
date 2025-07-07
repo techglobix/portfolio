@@ -30,12 +30,12 @@ export const pagesConfig: PagesConfig = {
         "TechGlobix's key tech stacks that define their professional identity.",
     },
   },
-  experience: {
-    title: "Experience",
+  projects: {
+    title: "Projects",
     description: "Highlighting career journey and impactful projects.",
     metadata: {
-      title: "Experience",
-      description: "TechGlobix's experience in building web applications.",
+      title: "Projects",
+      description: "TechGlobix's projects in building web applications.",
     },
   },
   contact: {
