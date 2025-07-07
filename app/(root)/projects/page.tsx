@@ -20,7 +20,7 @@ const renderContent = (tabVal: string) => {
   }
 
   return (
-    <div className="mx-auto my-4 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 static">
+    <div className="static grid justify-center gap-4 mx-auto my-4 sm:grid-cols-2 lg:grid-cols-3">
       {expArr.map((prj) => (
         <ProjectCard project={prj} key={prj.id} />
       ))}
@@ -37,8 +37,8 @@ export default function ProjectPage() {
       <Tabs defaultValue="all" className="w-full">
         <TabsList className="conatiner grid max-w-[30rem] grid-cols-3">
           <TabsTrigger value="all">All</TabsTrigger>
-          <TabsTrigger value="personal">Personal</TabsTrigger>
           <TabsTrigger value="professional">Professional</TabsTrigger>
+          <TabsTrigger value="personal">Personal</TabsTrigger>
         </TabsList>
         <TabsContent value="all" className="w-full">
           {renderContent("all")}
